@@ -4,7 +4,9 @@
 ## the part of my blog which is a TODO blogs I should do
 
 * audacity?
-* photography
+* javascript
 * time tracking
 * tetris
 * running a minecraft server
+* pixel art
+* other gamedev stuff

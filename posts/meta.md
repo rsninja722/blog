@@ -33,4 +33,4 @@ var post = window.location.search;
 `<div style="width: 100%; height: 50px; background-color: #313131;">`
 
 you can use html by the way mr. rsninja
-<iframe src="https://rsninja.dev/blog" style="width: 800px;height:600px;">
+<iframe src="https://rsninja.dev/blog" style="width: 800px;height:600px;"></iframe>
