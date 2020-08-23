@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="atom-one-dark.css">
+    <style>
+        body {background-color: #232323;color: #61aeee;font-family:monospace;margin: 0;}
+        h1,h2,h3,h4,h5,h6 {color: #d19a66;}
+        h1 {border-bottom: 2px solid #313131;}
+        pre {color: #e6c07b;}
+        a {color: #e6c07b;}
+        a:hover {color:rgb(238, 227, 206);}
+        ::-webkit-scrollbar {width: 10px;height: 10px;}
+        ::-webkit-scrollbar-track {background: #1e1e1e; }
+        ::-webkit-scrollbar-thumb {background: #444444; }
+        ::-webkit-scrollbar-thumb:hover {background: #666666; }
+    </style>
+</head>
+<body>
+    <div style="width: 100%; height: 50px; background-color: #313131;">
+        <a href="/index.html" style="position:absolute;left:0;height: 50px;">
+            <img src="/home.png" style="height: 50px;image-rendering: pixelated;image-rendering: crisp-edges;">
+        </a>
+        <img src="/logo.png" style="position:absolute;right:0;left:0;margin:auto;height: 50px;image-rendering: pixelated;image-rendering: crisp-edges;">
+        <h2 style="left: 150px;position: absolute;top: 10px;margin: 0;">Blog</h2>
+    </div>
+    <div id="links">
+        <h2>posts</h2>
+    </div>
+    <script src="posts/postList.js"></script>
+    <script src="marked.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.1/build/highlight.min.js"></script>
+    <script>
+        var post = window.location.search;
+        if (post !== "") {
+            post = post.substring(6, post.length);
+            fetch(`posts/${post}.md`).then(Response => Response.text().then(text => {
+                document.body.innerHTML += marked(text);
+                [].forEach.call(document.getElementsByTagName("code"),e=>hljs.highlightBlock(e));
+                document.body.removeChild(document.getElementById("links"));
+            }));
+        } else {
+            for(var i=0;i<posts.length;i++) {
+                var span = document.createElement("span");
+                span.innerText = posts[i][1];
+                span.style = "color: #414141;font-size: 20px";
+                document.getElementById("links").appendChild(span);
+
+                var a = document.createElement("a");
+                a.href = `?post=${posts[i][0]}`;
+                a.innerText = posts[i][0];
+                a.style = "position: absolute;left: 20ch;font-size: 20px";
+                document.getElementById("links").appendChild(a);
+
+                var br = document.createElement("br");
+                document.getElementById("links").appendChild(br);
+            }
+        }
+    </script>
+</body>
+</html>
