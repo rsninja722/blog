@@ -13,7 +13,7 @@ My biggest priority was making sure the camera could take better pictures my $10
 
 All my previous photography experience was taking the occasional picture with my phone or ipod. As soon as the camera arrived (it only took a week which was impressive for quarantine shipping times), I read through the whole manual like an absolute nerd. Then I watched a few videos on the basics of photography. Most of them layed out a bunch of rules that seemed like good advice, but at the end of the video they would say the rules are meant to be broken, so I stopped watching those quickly. Seriously tutorial man, should I, or should I not use the rule of thirds? I  need answers.
 
-My first shooting session (is that the correct term?) consisted of taking the same picture of a tree 30 times, constantly changing settings. I hardly learned anything about what the number means, so I continued on and just tried to take pictures of what I thought looked good. I think I was shooting manually for half the time I was there.
+My first shooting session (is that the correct term?) consisted of taking the same picture of a tree 30 times, constantly changing settings. I hardly learned anything about what the numbers mean, so I continued on and just tried to take pictures of what I thought looked good. I think I was shooting manually for half the time I was there.
 
 ![](media/photography2.jpg)
 
