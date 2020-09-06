@@ -6,7 +6,6 @@
 * audacity?
 * javascript
 * time tracking
-* tetris
 * running a minecraft server
 * pixel art
 * other gamedev stuff
