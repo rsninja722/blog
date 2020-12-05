@@ -1,5 +1,6 @@
 // [file name, date]
 posts = [
+    ["160_line_hello_world","2020.12.05"],
     ["quarantine","2020.09.15"],
     ["learning_pixel_art","2020.09.06"],
     ["tetris_sprint","2020.08.28"],
